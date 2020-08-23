@@ -10,13 +10,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lowquat/apple.git"
+    "url": "git+https://github.com/lowquat/applehome.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lowquat/apple/issues"
+    "url": "https://github.com/lowquat/applehome/issues"
   },
   "homepage": "https://lowquat.github.io/applehome",
   "dependencies": {
