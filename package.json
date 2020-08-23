@@ -1,5 +1,4 @@
 {
-  "home": "https://lowquat.github.io/apple",
   "name": "applehome",
   "version": "1.0.0",
   "description": "",
@@ -8,10 +7,15 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "gh-pages -d dist"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lowquat/apple.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "gh-pages": "^3.1.0"
-  }
+  "bugs": {
+    "url": "https://github.com/lowquat/apple/issues"
+  },
+  "homepage": "https://lowquat.github.io/apple"
 }
