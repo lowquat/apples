@@ -1,0 +1,343 @@
+// Menu Button Hamburger
+.menu-btn {
+  margin-top: 10px;
+
+  .btn-line {
+    width: 18px;
+    height: 0.4px;
+    margin: 8px 0;
+    padding: 0;
+    margin-left: 7px;
+    background: #fff;
+    opacity: 0.8;
+
+    a:hover {
+      opacity: 1;
+    }
+  }
+}
+
+// mobile header
+.mobile-header {
+  display: none;
+  width: 100%;
+  height: 48px;
+  // overflow: hidden;
+  align-items: center;
+  padding: 0 10px;
+
+  .mobile-apple-logo {
+    margin-top: 1px;
+  }
+
+  .mobile-bag {
+    img {
+      width: 40px;
+      // display: inline-block;
+      // position: relative;
+      height: 44px;
+      padding: 0 10px;
+      margin-top: 1px;
+    }
+  }
+}
+
+.mobile-header-list {
+  display: flex;
+  justify-content: space-between;
+
+  ul {
+    list-style: none;
+  }
+}
+
+// Media Queries
+
+@media (max-width: 760px) {
+  .main-nav {
+    height: 48px;
+  }
+
+  .white-space {
+    height: 48px;
+  }
+
+  .covid-copy {
+    padding: 12px 105px;
+  }
+
+  .contact-less {
+    padding: 12px 80px;
+  }
+
+  %mobile-copy {
+    h2 {
+      font-size: 32px;
+      line-height: 1.125;
+      font-weight: 600;
+      letter-spacing: 0.004em;
+      font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue",
+        "Helvetica", "Arial", sans-serif;
+    }
+
+    h3 {
+      font-size: 19px;
+      line-height: 1.4211;
+      font-weight: 400;
+      letter-spacing: 0.012em;
+      font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue",
+        "Helvetica", "Arial", sans-serif;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 1.42859;
+      font-weight: 400;
+      letter-spacing: -0.016em;
+      font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+        "Arial", sans-serif;
+    }
+  }
+
+  %app-copy {
+    h4 {
+      font-size: 32px;
+      line-height: 1.125;
+      font-weight: 600;
+      letter-spacing: 0.002em;
+      font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue",
+        "Helvetica", "Arial", sans-serif;
+      margin-top: 37px;
+      max-width: 240px;
+      width: 90%;
+    }
+
+    h6 {
+      font-size: 19px;
+      line-height: 1.21053;
+      font-weight: 400;
+      letter-spacing: 0.012em;
+      font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue",
+        "Helvetica", "Arial", sans-serif;
+    }
+  }
+
+  .cta-links {
+    font-size: 19px;
+    line-height: 1.21053;
+    font-weight: 400;
+    letter-spacing: 0.012em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+      "Arial", sans-serif;
+
+    a {
+      color: #0066cc;
+    }
+  }
+
+  .nav-bar {
+    display: none;
+  }
+
+  .mobile-header {
+    display: block;
+  }
+
+  // iphone se mobile image change
+  .banner-home {
+    background: url("/dist/img/iphone-se-small.jpg") no-repeat center/cover;
+    background-size: 346px 326px;
+    // background-size: cover;
+    background-position: 50% 100%;
+    height: 500px;
+    // width:346px;
+    background-color: #131313;
+    @extend %mobile-copy;
+
+    a {
+      color: #2997ff;
+    }
+  }
+
+  // iphone 11 section
+  .iphone-11 {
+    background: url("/dist/img/iphone-11-small.jpg") no-repeat center/cover;
+    background-size: 796px 312px;
+    // background-size: cover;
+    background-position: 50% 100%;
+    height: 520px;
+    margin: auto;
+    padding: 0;
+    background-color: #fbfbfd;
+  }
+
+  .iphone-11-text {
+    @extend %mobile-copy;
+  }
+
+  // iPad Pro
+  .ipad-pro {
+    background: url("/dist/img/ipad-pro-mobile.jpg") no-repeat center/cover;
+    background-size: 736px 548px;
+    // background-size: cover;
+    background-position: 50% 100%;
+    height: 530px;
+    margin: auto;
+    padding: 0;
+    background-color: #fbfbfd;
+
+    .ipad-text {
+      @extend %mobile-copy;
+    }
+  }
+
+  // grids
+  .app-cards {
+    grid-template-columns: repeat(1, 1fr);
+    @extend %app-copy;
+    @extend %mobile-copy;
+    padding: 0;
+  }
+
+  // college
+  .college-card {
+    background: url("/dist/img/college-mobile.jpg") no-repeat center/cover;
+    background-size: 796px 548px;
+    background-position: 50% 40%;
+    // height: 500px;
+    // border: 0;
+    // margin: 0;
+    // padding: 0;
+  }
+
+  // apple watch
+  .apple-watch-card {
+    // background-position: 50% 80%;
+  }
+
+  // oprah signature
+  .apple-tv-card {
+    background: url("/dist/img/apple-oprah-sit.jpg") no-repeat center/cover;
+    // width:1262px;
+    // height: 580px;
+    background-size: 1262px 580px;
+    background-position: 50% 20%;
+
+    img {
+      height: 27px;
+    }
+
+    .oprah-signature {
+    }
+  }
+
+  // apple's approach store
+  .apple-store-card {
+    background: url("/dist/img/apple-store-mobile.jpg") no-repeat center/cover;
+    background-size: 795px 548px;
+    height: 548px;
+    background-position: 50% 50%;
+    // background-color: #fbfbfd;
+
+    h4 {
+      width: 100%;
+      max-width: 330px;
+    }
+  }
+
+  // footer
+  .footer {
+    padding: 0 16px;
+    font-size: 12px;
+  }
+
+  // bottom links nav
+
+  .links-inner {
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    padding-right: 0;
+
+    .links-section {
+      border-bottom: 1px solid #5f5e5e;
+      -webkit-user-select: none; /* Safari */
+      -ms-user-select: none; /* IE 10+ and Edge */
+      user-select: none; /* Standard syntax */
+      padding-bottom: 0;
+    }
+
+    /* Style the buttons that are used to open and close the accordion panel */
+    .link-title {
+      width: 100%;
+      outline: none;
+      transition: 0.4s;
+      display: inline-block;
+      padding: 10px 0;
+      font-weight: 400;
+      margin: 0;
+    }
+
+    /* Style the accordion panel. Note: hidden by default */
+    ul {
+      padding: 0 18px;
+      display: none;
+      overflow: hidden;
+    }
+
+    .link-title:after {
+      content: "\02795"; // unicode for +
+      font-size: 10px;
+      color: white;
+      float: right;
+      padding-right: 8px;
+    }
+
+    .active:after {
+      content: "\2796"; // unicode for -
+      // transform: rotate(90deg);
+    }
+  }
+
+  // entire bottom footer section after nav
+  .bottom {
+    padding: 17px 0px 19px;
+  }
+
+  // more ways to shop
+  .footer-inner {
+    border-bottom: none;
+    margin: 0px 0px 7px;
+    padding: 0px 0px 8px;
+    padding-right: 30px;
+  }
+
+  // USA flag
+  .footer-lang {
+    float: none;
+    padding: 5px 0 0;
+  }
+
+  // After USA
+  .footer-bottom {
+    position: relative;
+    display: block;
+    padding-top: 20px;
+    // position: relative;
+    top: -3px;
+    padding-bottom: 0px;
+  }
+
+  // copyright
+  .copy-right {
+    float: none !important;
+    margin: 0;
+  }
+
+  // links at bottom
+  .link-lines {
+    float: none !important;
+    margin-right: 0;
+    margin-top: 5px;
+  }
+}
